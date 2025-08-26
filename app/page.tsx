@@ -71,15 +71,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <img
-                src="/compassionate-grief-counselor-in-warm-office-setti.png"
-                alt="Will Platnick, Certified Grief Recovery Specialist"
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-            <div className="space-y-6">
+          <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">Certified Expertise</h3>
                 <p className="text-muted-foreground">
@@ -102,7 +94,6 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-          </div>
         </div>
       </section>
 

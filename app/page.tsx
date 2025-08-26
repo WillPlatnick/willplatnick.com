@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Heart, BookOpen, Calendar, Mail, Phone, MapPin } from "lucide-react"
+import { Heart, BookOpen, Calendar, Mail, Phone, MapPin, Download, BarChart, ExternalLink, CheckCircle } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -17,6 +17,9 @@ export default function HomePage() {
             <nav className="hidden md:flex items-center space-x-6">
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
                 About
+              </a>
+              <a href="#evidence" className="text-muted-foreground hover:text-foreground transition-colors">
+                Evidence
               </a>
               <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
                 Services
@@ -35,9 +38,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <Badge variant="secondary" className="mb-4">
-            Certified Grief Recovery Specialist
-          </Badge>
+          <img 
+            src="/certified_grief_recovery_specialist_v4.jpg" 
+            alt="Certified Grief Recovery Method Specialist" 
+            className="h-16 mx-auto mb-6"
+          />
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             Guiding You Through
             <span className="text-primary block">Grief to Healing</span>
@@ -64,14 +69,21 @@ export default function HomePage() {
       <section id="about" className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About My Practice</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About My Work</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Grief is a natural response to loss, but you don't have to navigate it alone. I'm here to provide
-              professional, compassionate support on your healing journey.
+              Grief is a natural response to loss, but you don't have to navigate it alone. I'm here to guide you
+              through a proven, evidence-based program on your healing journey.
             </p>
           </div>
 
           <div className="space-y-6">
+              <div className="flex items-center justify-center mb-8">
+                <img 
+                  src="/grm-ebp-badge2x.png" 
+                  alt="Grief Recovery Method - Evidence Based Program" 
+                  className="h-32"
+                />
+              </div>
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">Certified Expertise</h3>
                 <p className="text-muted-foreground">
@@ -80,20 +92,191 @@ export default function HomePage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Compassionate Support</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Compassionate Guidance</h3>
                 <p className="text-muted-foreground">
-                  Every person's grief journey is unique. I provide a safe, non-judgmental space where you can explore
-                  your feelings and work toward healing at your own pace.
+                  Every person's grief journey is unique. I provide a safe, non-judgmental environment where you can explore
+                  your feelings and work through the proven Grief Recovery Method program at your own pace.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Faith-Integrated Approach</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Faith-Integrated Option</h3>
                 <p className="text-muted-foreground">
-                  For those who desire it, I offer faith-integrated grief support, helping you find comfort and strength
-                  through spiritual resources and biblical wisdom.
+                  For those who desire it, I can integrate faith-based perspectives into your grief recovery journey, helping you find comfort and strength
+                  through spiritual resources and biblical wisdom alongside the proven method.
                 </p>
               </div>
             </div>
+        </div>
+      </section>
+
+      {/* Evidence-Based Section */}
+      <section id="evidence" className="py-16 px-4 bg-primary/5">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Scientifically Proven Results
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              The Grief Recovery Method® isn't just another approach—it's backed by peer-reviewed research published in the 
+              American Journal of Health Education, showing exceptional effectiveness that far exceeds typical community programs.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="border-primary/20 bg-card shadow-lg">
+              <CardHeader>
+                <BarChart className="h-10 w-10 text-primary mb-2" />
+                <CardTitle className="text-2xl">Research-Validated Outcomes</CardTitle>
+                <CardDescription className="text-base">
+                  Independent research demonstrates statistically significant improvements across all measured dimensions
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-6">
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-foreground">Attitude Changes</span>
+                        <span className="text-2xl font-bold text-primary">91%</span>
+                      </div>
+                      <div className="w-full bg-muted rounded-full h-3">
+                        <div className="bg-primary h-3 rounded-full" style={{width: '91%'}}></div>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Participants showed improved attitudes toward grief and healing
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-foreground">Knowledge Gained</span>
+                        <span className="text-2xl font-bold text-primary">82%</span>
+                      </div>
+                      <div className="w-full bg-muted rounded-full h-3">
+                        <div className="bg-primary h-3 rounded-full" style={{width: '82%'}}></div>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Increased understanding of grief recovery principles
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-foreground">Behavioral Changes</span>
+                        <span className="text-2xl font-bold text-primary">78%</span>
+                      </div>
+                      <div className="w-full bg-muted rounded-full h-3">
+                        <div className="bg-primary h-3 rounded-full" style={{width: '78%'}}></div>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Adopted healthier behaviors for processing grief
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-foreground">Belief Transformation</span>
+                        <span className="text-2xl font-bold text-primary">53%</span>
+                      </div>
+                      <div className="w-full bg-muted rounded-full h-3">
+                        <div className="bg-primary h-3 rounded-full" style={{width: '53%'}}></div>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Shifted limiting beliefs about grief and loss
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-primary/20 bg-card shadow-lg">
+              <CardHeader>
+                <CheckCircle className="h-10 w-10 text-primary mb-2" />
+                <CardTitle className="text-2xl">Why This Matters</CardTitle>
+                <CardDescription className="text-base">
+                  These aren't just numbers—they represent real lives transformed
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="bg-primary/10 rounded-lg p-4">
+                    <h4 className="font-semibold text-foreground mb-2">Exceptional Effectiveness</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Most community-based programs achieve only 20-50% effectiveness. The Grief Recovery Method® 
+                      demonstrates up to <span className="font-bold text-foreground">91% effectiveness</span>—nearly 
+                      double the industry standard.
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Not Random Chance</p>
+                        <p className="text-sm text-muted-foreground">
+                          Statistically significant results prove the program creates real change
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Peer-Reviewed Research</p>
+                        <p className="text-sm text-muted-foreground">
+                          Published in the American Journal of Health Education
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Measurable Outcomes</p>
+                        <p className="text-sm text-muted-foreground">
+                          Concrete improvements in knowledge, attitudes, beliefs, and behaviors
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">40+ Years of Success</p>
+                        <p className="text-sm text-muted-foreground">
+                          Over 3 million people helped worldwide since the 1980s
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Button variant="outline" className="w-full mt-4" asChild>
+                    <a 
+                      href="https://www.tandfonline.com/doi/full/10.1080/19325037.2019.1571964" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Read the Full Research Study
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-card rounded-lg p-8 border-2 border-primary/20 shadow-lg">
+            <div className="text-center">
+              <p className="text-lg font-semibold text-foreground mb-2">
+                "These statistically significant effect sizes establish that the change in grief recovery variables 
+                wasn't by random chance—it was exposure to the Grief Recovery Method® that produced the measurable improvements."
+              </p>
+              <p className="text-sm text-muted-foreground">
+                — Dr. Rachael Nolan, PhD, MPH, CPH, Lead Researcher
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -103,24 +286,28 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How I Can Help</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Professional grief recovery services tailored to your unique needs and circumstances.
+              Structured grief recovery programs tailored to your unique needs and circumstances.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardHeader>
-                <Heart className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Individual Sessions</CardTitle>
+                <img 
+                  src="/one_on_one_logo.png" 
+                  alt="One on One Grief Support" 
+                  className="h-20 mb-4"
+                />
+                <CardTitle>Individual Program</CardTitle>
                 <CardDescription>
-                  One-on-one grief recovery sessions using proven methods to help you process loss and move forward.
+                  One-on-one guidance through the Grief Recovery Method to help you process loss and move forward.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Personalized grief recovery plan</li>
+                  <li>• Personalized program guidance</li>
                   <li>• Safe, confidential environment</li>
-                  <li>• Evidence-based techniques</li>
+                  <li>• Evidence-based curriculum</li>
                   <li>• Flexible scheduling options</li>
                 </ul>
               </CardContent>
@@ -129,9 +316,9 @@ export default function HomePage() {
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardHeader>
                 <BookOpen className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Faith-Based Support</CardTitle>
+                <CardTitle>Faith-Based Option</CardTitle>
                 <CardDescription>
-                  Integrating biblical wisdom and spiritual resources into your grief recovery journey.
+                  Integrating biblical wisdom and spiritual resources into your Grief Recovery Method journey.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -171,6 +358,70 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Healing Resources</h2>
             <p className="text-lg text-muted-foreground">Tools and resources to support your grief recovery journey.</p>
+          </div>
+
+          <div className="mb-12">
+            <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 shadow-xl">
+              <CardHeader className="text-center">
+                <Download className="h-12 w-12 text-primary mx-auto mb-4" />
+                <CardTitle className="text-2xl mb-2">FREE: The Grief Recovery Method® Guide</CardTitle>
+                <CardDescription className="text-lg">
+                  Discover the Revolutionary Approach That's Helped Millions Find Peace After Loss
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="bg-card/80 rounded-lg p-6 space-y-4">
+                  <h4 className="font-bold text-lg text-foreground">Transform Your Grief Into Growth</h4>
+                  <p className="text-muted-foreground">
+                    This comprehensive guide reveals the proven, evidence-based method that has transformed countless lives. 
+                    Unlike traditional approaches, the Grief Recovery Method® provides actionable steps to complete 
+                    your relationship with pain and rediscover joy.
+                  </p>
+                  <div className="space-y-3">
+                    <h5 className="font-semibold text-foreground">Inside This Life-Changing eBook:</h5>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>Why "time heals all wounds" is a myth—and what actually works</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>The 6 hidden myths about grief that keep you stuck in pain</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>A step-by-step action plan to move beyond loss—not just cope with it</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>How to handle the "emotional incompleteness" that follows any loss</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-primary mr-2">✓</span>
+                        <span>Real stories of transformation from grievers just like you</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-primary/10 rounded-lg p-4 text-center">
+                    <p className="text-sm font-semibold text-foreground mb-1">
+                      Join Over 3 Million People Who've Found Freedom From Grief
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      The Grief Recovery Method® has been helping people for over 40 years
+                    </p>
+                  </div>
+                </div>
+                <Button size="lg" className="w-full text-lg py-6" asChild>
+                  <a href="/grm_ebook_r_new.pdf" target="_blank" rel="noopener noreferrer">
+                    <BookOpen className="mr-2 h-5 w-5" />
+                    Read Your Free Guide Now
+                  </a>
+                </Button>
+                <p className="text-center text-xs text-muted-foreground">
+                  No email required • Opens in new tab • 100% free
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -258,11 +509,11 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Phone and video sessions</span>
+                    <span className="text-sm">Phone and video options</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Heart className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Compassionate, professional care</span>
+                    <span className="text-sm">Compassionate, certified guidance</span>
                   </div>
                 </div>
                 <Button size="lg" className="w-full" asChild>
@@ -277,17 +528,17 @@ export default function HomePage() {
             <Card className="border-border">
               <CardHeader>
                 <CardTitle>Get in Touch</CardTitle>
-                <CardDescription>Have questions about grief recovery or my services? I'm here to help.</CardDescription>
+                <CardDescription>Have questions about the Grief Recovery Method or how I can help? I'm here to answer them.</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Professional email support</span>
+                    <span className="text-sm">Email communication available</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Serving clients nationwide</span>
+                    <span className="text-sm">Serving people nationwide</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Heart className="h-5 w-5 text-primary" />
@@ -315,11 +566,14 @@ export default function HomePage() {
               <span className="text-xl font-semibold text-foreground">Will Platnick</span>
             </div>
             <p className="text-muted-foreground">
-              Certified Grief Recovery Specialist • Compassionate Support • Faith-Based Healing
+              Certified Grief Recovery Specialist • Evidence-Based Program • Faith Integration Available
             </p>
             <div className="flex justify-center space-x-6 text-sm text-muted-foreground">
               <a href="#about" className="hover:text-foreground transition-colors">
                 About
+              </a>
+              <a href="#evidence" className="hover:text-foreground transition-colors">
+                Evidence
               </a>
               <a href="#services" className="hover:text-foreground transition-colors">
                 Services
@@ -332,7 +586,7 @@ export default function HomePage() {
               </a>
             </div>
             <p className="text-xs text-muted-foreground">
-              © 2025 Will Platnick. All rights reserved. • Professional grief recovery services.
+              © 2025 Will Platnick. All rights reserved. • Grief Recovery Method guidance.
             </p>
           </div>
         </div>

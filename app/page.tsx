@@ -80,7 +80,7 @@ export default function HomePage() {
             <div className="order-2 md:order-1">
               <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
                 <p>
-                  Based in Saratoga Springs, just north of Albany in New York's Capital Region, Will Platnick brings a uniquely personal understanding to his work as a Certified Grief Recovery Specialist. By age 40, Will had experienced profound losses that would reshape his life's purpose-the deaths of both parents, his son, and numerous friends, while also navigating the complex grief that accompanies chronic illness.
+                  Based in Saratoga Springs, just north of Albany in New York's Capital Region, Will Platnick brings a uniquely personal understanding to his work as a Certified Grief Recovery Specialist. By age 40, Will had experienced profound losses that would reshape his life's purpose-the deaths of both parents, his son, and numerous friends, while also navigating the complex grief that accompanies chronic illness in the family.
                 </p>
                 <p>
                   In working through his own grief, Will authored <em>"Sitting in Grief: A Journey Towards Standing Again,"</em> a deeply personal reading plan for the YouVersion Bible App. What began as his own healing process became a lifeline for tens of thousands. Through a simple contact form, readers from around the world began reaching out-sharing how Will's words had captured the essence of their pain and, more importantly, made them feel truly seen for the first time by someone who understood the weight of loss.

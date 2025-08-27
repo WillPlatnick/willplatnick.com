@@ -484,7 +484,7 @@ export default function HomePage() {
               <CardContent className="space-y-4">
                 <div className="text-center py-3 border-y border-border">
                   <div className="text-2xl font-bold text-foreground">$395</div>
-                  <div className="text-xs text-muted-foreground">Group program</div>
+                  <div className="text-xs text-muted-foreground">8 weeks • Once per week</div>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start">
@@ -522,7 +522,7 @@ export default function HomePage() {
               <CardContent className="space-y-4">
                 <div className="text-center py-3 border-y border-border">
                   <div className="text-2xl font-bold text-foreground">$300</div>
-                  <div className="text-xs text-muted-foreground">Specialized group</div>
+                  <div className="text-xs text-muted-foreground">6 weeks • Once per week</div>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start">
@@ -554,30 +554,30 @@ export default function HomePage() {
                 />
                 <CardTitle>Helping Children with Loss</CardTitle>
                 <CardDescription>
-                  Group program designed to support children through their unique grief experiences.
+                  For adults who love, care for, or work with grieving children—learn how to guide them through loss.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center py-3 border-y border-border">
                   <div className="text-2xl font-bold text-foreground">$250</div>
-                  <div className="text-xs text-muted-foreground">Children's group</div>
+                  <div className="text-xs text-muted-foreground">4 sessions • 10 hours total</div>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Age-appropriate methods</span>
+                    <span>For parents, teachers & caregivers</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Child-focused activities</span>
+                    <span>Learn to help children express grief</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Safe expression space</span>
+                    <span>Based on "When Children Grieve" book</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Parent/guardian guidance</span>
+                    <span>Evidence-based action program</span>
                   </li>
                 </ul>
               </CardContent>

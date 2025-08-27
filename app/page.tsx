@@ -80,16 +80,16 @@ export default function HomePage() {
             <div className="order-2 md:order-1">
               <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
                 <p>
-                  Based in Saratoga Springs, just north of Albany in New York's Capital Region, Will Platnick brings a uniquely personal understanding to his work as a Certified Grief Recovery Specialist. By age 40, Will had experienced profound losses that would reshape his life's purpose—the deaths of both parents, his son, and numerous friends, while also navigating the complex grief that accompanies chronic illness.
+                  Based in Saratoga Springs, just north of Albany in New York's Capital Region, Will Platnick brings a uniquely personal understanding to his work as a Certified Grief Recovery Specialist. By age 40, Will had experienced profound losses that would reshape his life's purpose-the deaths of both parents, his son, and numerous friends, while also navigating the complex grief that accompanies chronic illness.
                 </p>
                 <p>
-                  In working through his own grief, Will authored <em>"Sitting in Grief: A Journey Towards Standing Again,"</em> a deeply personal reading plan for the YouVersion Bible App. What began as his own healing process became a lifeline for tens of thousands. Through a simple contact form, readers from around the world began reaching out—sharing how Will's words had captured the essence of their pain and, more importantly, made them feel truly seen for the first time by someone who understood the weight of loss.
+                  In working through his own grief, Will authored <em>"Sitting in Grief: A Journey Towards Standing Again,"</em> a deeply personal reading plan for the YouVersion Bible App. What began as his own healing process became a lifeline for tens of thousands. Through a simple contact form, readers from around the world began reaching out-sharing how Will's words had captured the essence of their pain and, more importantly, made them feel truly seen for the first time by someone who understood the weight of loss.
                 </p>
                 <p>
-                  These thousands of heartfelt messages revealed a profound truth: people desperately needed someone who could walk alongside them through grief—not just with sympathy, but with genuine understanding born from experience. This calling led Will to become certified through the Grief Recovery Method®, combining his lived experience with evidence-based techniques to help others find their path toward healing.
+                  These thousands of heartfelt messages revealed a profound truth: people desperately needed someone who could walk alongside them through grief-not just with sympathy, but with genuine understanding born from experience. This calling led Will to become certified through the Grief Recovery Method®, combining his lived experience with evidence-based techniques to help others find their path toward healing.
                 </p>
                 <p className="font-semibold text-foreground">
-                  "Grief taught me that healing isn't about 'moving on'—it's about moving forward with love, memories, and newfound purpose. Let me help you discover that same transformation."
+                  "Grief taught me that healing isn't about 'moving on'-it's about moving forward with love, memories, and newfound purpose. Let me help you discover that same transformation."
                 </p>
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
                 />
                 <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-lg p-4 shadow-lg max-w-xs">
                   <p className="text-sm font-medium">
-                    "Thousands have found comfort through Will's journey—now let him guide yours."
+                    "Thousands have found comfort through Will's journey-now let him guide yours."
                   </p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function HomePage() {
                   Thank you so much for speaking direct. I'm really struggling every day. But this reading made me feel 
                   like someone understands...and actually gets it."
                 </p>
-                <p className="text-sm font-semibold text-foreground">— Fay</p>
+                <p className="text-sm font-semibold text-foreground">- Fay</p>
                 <p className="text-xs text-muted-foreground">Reading Plan User</p>
               </CardContent>
             </Card>
@@ -205,7 +205,7 @@ export default function HomePage() {
                   "The personal experiences expressed matched exactly how I feel! I lost my Mom in January and I am lost 
                   without her! Reading this has helped me so much! Thank you!"
                 </p>
-                <p className="text-sm font-semibold text-foreground">— Shannon</p>
+                <p className="text-sm font-semibold text-foreground">- Shannon</p>
                 <p className="text-xs text-muted-foreground">Reading Plan User</p>
               </CardContent>
             </Card>
@@ -221,7 +221,7 @@ export default function HomePage() {
                   "Your transparency helped me feel less alone. There's just a real sense of heart and soul in your 
                   writing and guidance that I connected with. The verses you've chosen were wonderfully matched."
                 </p>
-                <p className="text-sm font-semibold text-foreground">— Cheryl</p>
+                <p className="text-sm font-semibold text-foreground">- Cheryl</p>
                 <p className="text-xs text-muted-foreground">Reading Plan User</p>
               </CardContent>
             </Card>
@@ -246,7 +246,7 @@ export default function HomePage() {
               Scientifically Proven Results
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              The Grief Recovery Method® isn't just another approach—it's backed by peer-reviewed research published in the 
+              The Grief Recovery Method® isn't just another approach-it's backed by peer-reviewed research published in the 
               American Journal of Health Education, showing exceptional effectiveness that far exceeds typical community programs.
             </p>
           </div>
@@ -324,7 +324,7 @@ export default function HomePage() {
                 <CheckCircle className="h-10 w-10 text-primary mb-2" />
                 <CardTitle className="text-2xl">Why This Matters</CardTitle>
                 <CardDescription className="text-base">
-                  These aren't just numbers—they represent real lives transformed
+                  These aren't just numbers-they represent real lives transformed
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -333,7 +333,7 @@ export default function HomePage() {
                     <h4 className="font-semibold text-foreground mb-2">Exceptional Effectiveness</h4>
                     <p className="text-sm text-muted-foreground">
                       Most community-based programs achieve only 20-50% effectiveness. The Grief Recovery Method® 
-                      demonstrates up to <span className="font-bold text-foreground">91% effectiveness</span>—nearly 
+                      demonstrates up to <span className="font-bold text-foreground">91% effectiveness</span>-nearly 
                       double the industry standard.
                     </p>
                   </div>
@@ -399,10 +399,10 @@ export default function HomePage() {
             <div className="text-center">
               <p className="text-lg font-semibold text-foreground mb-2">
                 "These statistically significant effect sizes establish that the change in grief recovery variables 
-                wasn't by random chance—it was exposure to the Grief Recovery Method® that produced the measurable improvements."
+                wasn't by random chance-it was exposure to the Grief Recovery Method® that produced the measurable improvements."
               </p>
               <p className="text-sm text-muted-foreground">
-                — Dr. Rachael Nolan, PhD, MPH, CPH, Lead Researcher
+                - Dr. Rachael Nolan, PhD, MPH, CPH, Lead Researcher
               </p>
             </div>
           </div>
@@ -639,7 +639,7 @@ export default function HomePage() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start">
                         <span className="text-primary mr-2">✓</span>
-                        <span>Why "time heals all wounds" is a myth—and what actually works</span>
+                        <span>Why "time heals all wounds" is a myth-and what actually works</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-primary mr-2">✓</span>
@@ -647,7 +647,7 @@ export default function HomePage() {
                       </li>
                       <li className="flex items-start">
                         <span className="text-primary mr-2">✓</span>
-                        <span>A step-by-step action plan to move beyond loss—not just cope with it</span>
+                        <span>A step-by-step action plan to move beyond loss-not just cope with it</span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-primary mr-2">✓</span>

@@ -67,45 +67,100 @@ export default function HomePage() {
 
       {/* About Section */}
       <section id="about" className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About My Work</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Grief is a natural response to loss, but you don't have to navigate it alone. I'm here to guide you
-              through a proven, evidence-based program on your healing journey.
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About Will Platnick</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              A journey through profound loss transformed into a calling to guide others toward healing
             </p>
           </div>
 
-          <div className="space-y-6">
-              <div className="flex items-center justify-center mb-8">
-                <img 
-                  src="/grm-ebp-badge2x.png" 
-                  alt="Grief Recovery Method - Evidence Based Program" 
-                  className="h-32"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Certified Expertise</h3>
-                <p className="text-muted-foreground">
-                  Trained and certified in the Grief Recovery Method, an evidence-based approach that has helped
-                  millions of people worldwide process their grief and reclaim their lives.
+          {/* Personal Story Section */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="order-2 md:order-1">
+              <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+                <p>
+                  Based in Saratoga Springs, just north of Albany in New York's Capital Region, Will Platnick brings a uniquely personal understanding to his work as a Certified Grief Recovery Specialist. By age 40, Will had experienced profound losses that would reshape his life's purpose—the deaths of both parents, his son, and numerous friends, while also navigating the complex grief that accompanies chronic illness.
                 </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Compassionate Guidance</h3>
-                <p className="text-muted-foreground">
-                  Every person's grief journey is unique. I provide a safe, non-judgmental environment where you can explore
-                  your feelings and work through the proven Grief Recovery Method program at your own pace.
+                <p>
+                  In working through his own grief, Will authored <em>"Sitting in Grief: A Journey Towards Standing Again,"</em> a deeply personal reading plan for the YouVersion Bible App. What began as his own healing process became a lifeline for tens of thousands. Through a simple contact form, readers from around the world began reaching out—sharing how Will's words had captured the essence of their pain and, more importantly, made them feel truly seen for the first time by someone who understood the weight of loss.
                 </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Faith-Integrated Option</h3>
-                <p className="text-muted-foreground">
-                  For those who desire it, I can integrate faith-based perspectives into your grief recovery journey, helping you find comfort and strength
-                  through spiritual resources and biblical wisdom alongside the proven method.
+                <p>
+                  These thousands of heartfelt messages revealed a profound truth: people desperately needed someone who could walk alongside them through grief—not just with sympathy, but with genuine understanding born from experience. This calling led Will to become certified through the Grief Recovery Method®, combining his lived experience with evidence-based techniques to help others find their path toward healing.
+                </p>
+                <p className="font-semibold text-foreground">
+                  "Grief taught me that healing isn't about 'moving on'—it's about moving forward with love, memories, and newfound purpose. I'm here to help you discover that same transformation."
                 </p>
               </div>
             </div>
+            <div className="order-1 md:order-2">
+              <div className="relative">
+                <img 
+                  src="/will.jpg" 
+                  alt="Will Platnick - Certified Grief Recovery Specialist" 
+                  className="rounded-lg shadow-xl w-full"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-lg p-4 shadow-lg max-w-xs">
+                  <p className="text-sm font-medium">
+                    "Thousands have found comfort through Will's journey—now let him guide yours."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Credentials and Approach */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-center mb-8">
+              <img 
+                src="/grm-ebp-badge2x.png" 
+                alt="Grief Recovery Method - Evidence Based Program" 
+                className="h-32"
+              />
+            </div>
+            
+            <Card className="border-primary/20 bg-card/80 backdrop-blur">
+              <CardContent className="pt-6">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <Heart className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <h3 className="font-semibold text-foreground mb-2">Personal Understanding</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Having walked through multiple profound losses, Will brings genuine empathy and lived experience to every session.
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <BookOpen className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <h3 className="font-semibold text-foreground mb-2">Proven Method</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Certified in the evidence-based Grief Recovery Method® with documented success helping millions worldwide.
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <Badge className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <h3 className="font-semibold text-foreground mb-2">Faith Integration</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Optional faith-based support drawing from Will's experience as a devotional author reaching thousands globally.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="bg-muted rounded-lg p-8 text-center">
+              <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-3">Author of "Sitting in Grief"</h3>
+              <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
+                Will's YouVersion Bible App reading plan has touched thousands of lives worldwide, offering daily comfort and understanding to those navigating loss.
+              </p>
+              <Button variant="outline" asChild>
+                <a href="https://www.bible.com/reading-plans/19799-sitting-in-grief-a-journey-towards-standing-again" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Read the Devotional Plan
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -290,8 +345,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-border hover:shadow-lg transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="border-border hover:shadow-lg transition-shadow relative">
+              <Badge className="absolute -top-3 -right-3 bg-primary text-primary-foreground px-3 py-1">
+                Most Popular
+              </Badge>
               <CardHeader>
                 <img 
                   src="/one_on_one_logo.png" 
@@ -303,49 +361,174 @@ export default function HomePage() {
                   One-on-one guidance through the Grief Recovery Method to help you process loss and move forward.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
+                <div className="text-center py-4 border-y border-border">
+                  <div className="text-3xl font-bold text-foreground">$500</div>
+                  <div className="text-sm text-muted-foreground">7 sessions • Once per week</div>
+                </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Personalized program guidance</li>
-                  <li>• Safe, confidential environment</li>
-                  <li>• Evidence-based curriculum</li>
-                  <li>• Flexible scheduling options</li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Personalized program guidance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Safe, confidential environment</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Evidence-based curriculum</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Flexible scheduling options</span>
+                  </li>
+                </ul>
+                <div className="bg-primary/10 rounded-lg p-3">
+                  <p className="text-xs font-semibold text-foreground mb-1">
+                    100% Money-Back Guarantee
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    If you attend all sessions and don't feel our time was well spent, receive a full refund.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <img 
+                  src="/grm_support_group_logo_medium.png" 
+                  alt="Grief Recovery Method Support Group" 
+                  className="h-20 mb-4"
+                />
+                <CardTitle>Group Sessions</CardTitle>
+                <CardDescription>
+                  Join others on a shared healing journey through the Grief Recovery Method in a supportive group setting.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="text-center py-3 border-y border-border">
+                  <div className="text-2xl font-bold text-foreground">$395</div>
+                  <div className="text-xs text-muted-foreground">Group program</div>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Shared healing experience</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Evidence-based curriculum</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Peer support network</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Smaller group setting</span>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardHeader>
-                <BookOpen className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Faith-Based Option</CardTitle>
+                <img 
+                  src="/pet_loss_logo_medium_jpg_0.jpg" 
+                  alt="Pet Loss Support Group" 
+                  className="h-20 mb-4"
+                />
+                <CardTitle>Pet Loss Group</CardTitle>
                 <CardDescription>
-                  Integrating biblical wisdom and spiritual resources into your Grief Recovery Method journey.
+                  Specialized group support for those grieving the loss of a beloved companion animal.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
+                <div className="text-center py-3 border-y border-border">
+                  <div className="text-2xl font-bold text-foreground">$300</div>
+                  <div className="text-xs text-muted-foreground">Specialized group</div>
+                </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Scripture-based comfort</li>
-                  <li>• Prayer and spiritual guidance</li>
-                  <li>• Christian grief resources</li>
-                  <li>• Hope-centered healing</li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Pet-specific grief support</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Understanding companions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Honoring your pet's memory</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Judgment-free environment</span>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardHeader>
-                <Calendar className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Ongoing Support</CardTitle>
+                <img 
+                  src="/hcwl_logo_0.png" 
+                  alt="Helping Children with Loss" 
+                  className="h-20 mb-4"
+                />
+                <CardTitle>Helping Children with Loss</CardTitle>
                 <CardDescription>
-                  Continued guidance and resources to support your healing journey over time.
+                  Group program designed to support children through their unique grief experiences.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
+                <div className="text-center py-3 border-y border-border">
+                  <div className="text-2xl font-bold text-foreground">$250</div>
+                  <div className="text-xs text-muted-foreground">Children's group</div>
+                </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Follow-up sessions</li>
-                  <li>• Resource recommendations</li>
-                  <li>• Crisis support availability</li>
-                  <li>• Community connections</li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Age-appropriate methods</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Child-focused activities</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Safe expression space</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Parent/guardian guidance</span>
+                  </li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Scholarship Information */}
+          <div className="mt-12">
+            <Card className="bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-center justify-center mb-4">
+                  <Heart className="h-8 w-8 text-primary mr-3" />
+                  <h3 className="text-xl font-bold text-foreground">Need-Based Scholarships Available</h3>
+                </div>
+                <p className="text-center text-muted-foreground mb-4">
+                  Financial hardship shouldn't prevent healing. Thanks to generous support from the <span className="font-semibold text-foreground">New Breath Spirituality Center</span>, 
+                  need-based scholarships are available for those who qualify.
+                </p>
+                <div className="flex justify-center">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="#contact">
+                      Inquire About Scholarship Options
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -424,65 +607,11 @@ export default function HomePage() {
             </Card>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-border bg-card">
-              <CardHeader>
-                <BookOpen className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Bible Reading Plan</CardTitle>
-                <CardDescription>
-                  A specially curated reading plan designed to provide comfort and hope during times of grief.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <h4 className="font-semibold text-foreground">"Sitting in Grief: A Journey Towards Standing Again"</h4>
-                <p className="text-sm text-muted-foreground">
-                  This thoughtfully crafted Bible reading plan offers daily scripture passages, reflections, and prayers
-                  to guide you through the valleys of grief toward hope and healing.
-                </p>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <a
-                    href="https://www.bible.com/reading-plans/19799-sitting-in-grief-a-journey-towards-standing-again"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Access Reading Plan
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border bg-card">
-              <CardHeader>
-                <Heart className="h-8 w-8 text-primary mb-2" />
-                <CardTitle>Additional Resources</CardTitle>
-                <CardDescription>Helpful materials and tools to support your healing process.</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
-                  <div>
-                    <h5 className="font-medium text-foreground">Grief Recovery Method</h5>
-                    <p className="text-sm text-muted-foreground">Learn more about the evidence-based approach I use</p>
-                  </div>
-                  <div>
-                    <h5 className="font-medium text-foreground">Support Groups</h5>
-                    <p className="text-sm text-muted-foreground">Connect with others on similar journeys</p>
-                  </div>
-                  <div>
-                    <h5 className="font-medium text-foreground">Crisis Resources</h5>
-                    <p className="text-sm text-muted-foreground">24/7 support when you need it most</p>
-                  </div>
-                </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <a href="#contact">Request Resources</a>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4">
+      <section id="contact" className="py-8 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -509,7 +638,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Phone and video options</span>
+                    <span className="text-sm">Zoom video sessions</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Heart className="h-5 w-5 text-primary" />

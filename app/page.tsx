@@ -48,7 +48,7 @@ export default function HomePage() {
             <span className="text-primary block">Grief to Healing</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            As a Certified Grief Recovery Specialist with the Grief Recovery Method, I provide compassionate support to
+            As a Certified Grief Recovery Specialist with the Grief Recovery Method, Will provides compassionate support to
             help you navigate loss and find your path toward healing and hope.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -89,7 +89,7 @@ export default function HomePage() {
                   These thousands of heartfelt messages revealed a profound truth: people desperately needed someone who could walk alongside them through grief—not just with sympathy, but with genuine understanding born from experience. This calling led Will to become certified through the Grief Recovery Method®, combining his lived experience with evidence-based techniques to help others find their path toward healing.
                 </p>
                 <p className="font-semibold text-foreground">
-                  "Grief taught me that healing isn't about 'moving on'—it's about moving forward with love, memories, and newfound purpose. I'm here to help you discover that same transformation."
+                  "Grief taught me that healing isn't about 'moving on'—it's about moving forward with love, memories, and newfound purpose. Let me help you discover that same transformation."
                 </p>
               </div>
             </div>
@@ -164,8 +164,82 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 px-4 bg-primary/5">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Voices of Healing
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Thousands have found comfort through "Sitting in Grief: A Journey Towards Standing Again"
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-card border-primary/10">
+              <CardContent className="pt-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Heart key={i} className="h-5 w-5 text-primary fill-primary" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "This was the most real and relevant teaching ever. I felt like the writer was actually speaking to me. 
+                  Thank you so much for speaking direct. I'm really struggling every day. But this reading made me feel 
+                  like someone understands...and actually gets it."
+                </p>
+                <p className="text-sm font-semibold text-foreground">— Fay</p>
+                <p className="text-xs text-muted-foreground">Reading Plan User</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-primary/10">
+              <CardContent className="pt-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Heart key={i} className="h-5 w-5 text-primary fill-primary" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "The personal experiences expressed matched exactly how I feel! I lost my Mom in January and I am lost 
+                  without her! Reading this has helped me so much! Thank you!"
+                </p>
+                <p className="text-sm font-semibold text-foreground">— Shannon</p>
+                <p className="text-xs text-muted-foreground">Reading Plan User</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-primary/10">
+              <CardContent className="pt-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Heart key={i} className="h-5 w-5 text-primary fill-primary" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Your transparency helped me feel less alone. There's just a real sense of heart and soul in your 
+                  writing and guidance that I connected with. The verses you've chosen were wonderfully matched."
+                </p>
+                <p className="text-sm font-semibold text-foreground">— Cheryl</p>
+                <p className="text-xs text-muted-foreground">Reading Plan User</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center justify-center bg-primary/10 rounded-lg px-6 py-3">
+              <BookOpen className="h-6 w-6 text-primary mr-3" />
+              <p className="text-foreground font-medium">
+                Over 10,000 readers have found comfort through Will's devotional plan
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Evidence-Based Section */}
-      <section id="evidence" className="py-16 px-4 bg-primary/5">
+      <section id="evidence" className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -339,7 +413,7 @@ export default function HomePage() {
       <section id="services" className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How I Can Help</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How Will Can Help</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Structured grief recovery programs tailored to your unique needs and circumstances.
             </p>
@@ -389,7 +463,7 @@ export default function HomePage() {
                     100% Money-Back Guarantee
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    If you attend all sessions and don't feel our time was well spent, receive a full refund.
+                    If you attend all sessions and don't feel the time was well spent, receive a full refund.
                   </p>
                 </div>
               </CardContent>
@@ -618,7 +692,7 @@ export default function HomePage() {
               Ready to Begin Your Healing Journey?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Take the first step toward healing. I'm here to support you every step of the way.
+              Take the first step toward healing. Will is here to support you every step of the way.
             </p>
           </div>
 
@@ -627,7 +701,7 @@ export default function HomePage() {
               <CardHeader>
                 <CardTitle>Schedule a Consultation</CardTitle>
                 <CardDescription>
-                  Book a confidential consultation to discuss how I can support your grief recovery journey.
+                  Book a confidential consultation to discuss how Will can support your grief recovery journey.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -657,7 +731,7 @@ export default function HomePage() {
             <Card className="border-border">
               <CardHeader>
                 <CardTitle>Get in Touch</CardTitle>
-                <CardDescription>Have questions about the Grief Recovery Method or how I can help? I'm here to answer them.</CardDescription>
+                <CardDescription>Have questions about the Grief Recovery Method or how Will can help? He's here to answer them.</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">

@@ -789,7 +789,7 @@ export default function HomePage() {
               </a>
             </div>
             <p className="text-xs text-muted-foreground">
-              © 2025 Will Platnick. All rights reserved. • Grief Recovery Method guidance.
+              © 2025 Beacon and Balance LLC. All rights reserved. • Grief Recovery Method guidance.
             </p>
           </div>
         </div>

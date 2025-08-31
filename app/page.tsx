@@ -1,9 +1,52 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Heart, BookOpen, Calendar, Mail, Phone, MapPin, Download, BarChart, ExternalLink, CheckCircle } from "lucide-react"
 
 export default function HomePage() {
+  const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [formMessage, setFormMessage] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setFormStatus('loading')
+    
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    formData.append("access_key", "08cce690-9b05-448c-925d-7777ebe2c2f8")
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      })
+      
+      const data = await response.json()
+      
+      // Web3Forms returns {success: true} on successful submission
+      // If we get a 200 response, treat it as success unless explicitly told otherwise
+      if (response.ok) {
+        setFormStatus('success')
+        setFormMessage("Thank you for reaching out. Will will be in touch with you soon.")
+        form.reset()
+      } else {
+        setFormStatus('error')
+        setFormMessage(data.message || "Something went wrong. Please try again or email directly.")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setFormStatus('error')
+      setFormMessage("Something went wrong. Please try again or email directly.")
+    }
+    
+    setTimeout(() => {
+      setFormStatus('idle')
+      setFormMessage('')
+    }, 5000)
+  }
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -733,27 +776,99 @@ export default function HomePage() {
                 <CardTitle>Get in Touch</CardTitle>
                 <CardDescription>Have questions about the Grief Recovery Method or how Will can help? He's here to answer them.</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Email communication available</span>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="Your name"
+                    />
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Serving people nationwide</span>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="your@email.com"
+                    />
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Heart className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Confidential and secure</span>
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1">
+                      Phone (optional)
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">
+                      Message *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                      placeholder="Tell me a bit about what you're looking for..."
+                    />
+                  </div>
+                  
+                  {formMessage && (
+                    <div className={`p-3 rounded-md text-sm ${
+                      formStatus === 'success' 
+                        ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400' 
+                        : 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400'
+                    }`}>
+                      {formMessage}
+                    </div>
+                  )}
+                  
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full"
+                    disabled={formStatus === 'loading'}
+                  >
+                    {formStatus === 'loading' ? (
+                      <>Sending...</>
+                    ) : (
+                      <>
+                        <Mail className="mr-2 h-5 w-5" />
+                        Send Message
+                      </>
+                    )}
+                  </Button>
+                </form>
+                
+                <div className="mt-6 pt-6 border-t border-border">
+                  <div className="space-y-2 text-xs text-muted-foreground">
+                    <div className="flex items-center space-x-2">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      <span>Serving clients nationwide via Zoom</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Heart className="h-4 w-4 text-primary" />
+                      <span>All communications are confidential</span>
+                    </div>
                   </div>
                 </div>
-                <Button variant="outline" size="lg" className="w-full bg-transparent" asChild>
-                  <a href="mailto:will@willplatnick.com">
-                    <Mail className="mr-2 h-5 w-5" />
-                    Send a Message
-                  </a>
-                </Button>
               </CardContent>
             </Card>
           </div>

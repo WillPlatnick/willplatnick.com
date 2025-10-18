@@ -96,7 +96,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="https://fantastical.app/wplatnick-dLno/30" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendar.notion.so/meet/willplatnick/r4ab4o39" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 Schedule a Consultation
               </a>
@@ -763,7 +763,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Button size="lg" className="w-full" asChild>
-                  <a href="https://fantastical.app/wplatnick-dLno/30" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendar.notion.so/meet/willplatnick/r4ab4o39" target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-2 h-5 w-5" />
                     Book Your Consultation
                   </a>

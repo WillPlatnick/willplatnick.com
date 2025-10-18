@@ -74,4 +74,4 @@ npm run lint
 
 ## Contact Information
 - Email: will@willplatnick.com
-- Scheduling: https://fantastical.app/wplatnick-dLno/30
+- Scheduling: https://calendar.notion.so/meet/willplatnick/r4ab4o39

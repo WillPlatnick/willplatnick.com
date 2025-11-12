@@ -79,7 +79,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <img 
             src="/certified_grief_recovery_specialist_v4.jpg" 

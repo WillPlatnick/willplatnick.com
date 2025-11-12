@@ -94,17 +94,6 @@ export default function HomePage() {
             As a Certified Grief Recovery Specialist with the Grief Recovery Method, Will provides compassionate support to
             help you navigate loss and find your path toward healing and hope.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="#contact">
-                <Mail className="mr-2 h-5 w-5" />
-                Get in Touch
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent" asChild>
-              <a href="#about">Learn More About My Approach</a>
-            </Button>
-          </div>
         </div>
       </section>
 

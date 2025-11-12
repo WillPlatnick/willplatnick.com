@@ -79,18 +79,18 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 px-4">
+      <section className="py-8 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <img 
-            src="/certified_grief_recovery_specialist_v4.jpg" 
-            alt="Certified Grief Recovery Method Specialist" 
+          <img
+            src="/certified_grief_recovery_specialist_v4.jpg"
+            alt="Certified Grief Recovery Method Specialist"
             className="h-16 mx-auto mb-6"
           />
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             Guiding You Through
             <span className="text-primary block">Grief to Healing</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             As a Certified Grief Recovery Specialist with the Grief Recovery Method, Will provides compassionate support to
             help you navigate loss and find your path toward healing and hope.
           </p>

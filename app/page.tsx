@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Heart, BookOpen, Calendar, Mail, Phone, MapPin, Download, BarChart, ExternalLink, CheckCircle } from "lucide-react"
+import { Heart, BookOpen, Mail, MapPin, Download, BarChart, ExternalLink, CheckCircle } from "lucide-react"
 
 export default function HomePage() {
   const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -739,38 +739,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-border">
-              <CardHeader>
-                <CardTitle>Schedule a Consultation</CardTitle>
-                <CardDescription>
-                  Book a confidential consultation to discuss how Will can support your grief recovery journey.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <Calendar className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Flexible scheduling available</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Zoom video sessions</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Heart className="h-5 w-5 text-primary" />
-                    <span className="text-sm">Compassionate, certified guidance</span>
-                  </div>
-                </div>
-                <Button size="lg" className="w-full" asChild>
-                  <a href="https://calendar.notion.so/meet/willplatnick/r4ab4o39" target="_blank" rel="noopener noreferrer">
-                    <Calendar className="mr-2 h-5 w-5" />
-                    Book Your Consultation
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
+          <div className="max-w-2xl mx-auto">
             <Card className="border-border">
               <CardHeader>
                 <CardTitle>Get in Touch</CardTitle>

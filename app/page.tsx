@@ -457,9 +457,55 @@ export default function HomePage() {
                 Most Popular
               </Badge>
               <CardHeader>
-                <img 
-                  src="/one_on_one_logo.png" 
-                  alt="One on One Grief Support" 
+                <img
+                  src="/grm_support_group_logo_medium.png"
+                  alt="Grief Recovery Method Support Group"
+                  className="h-20 mb-4"
+                />
+                <CardTitle>Group Sessions</CardTitle>
+                <CardDescription>
+                  Join others on a shared healing journey through the Grief Recovery Method in a supportive group setting.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="text-center py-4 border-y border-border">
+                  <div className="text-3xl font-bold text-foreground">$395</div>
+                  <div className="text-sm text-muted-foreground">8 weeks • Once per week</div>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Shared healing experience</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Evidence-based curriculum</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Peer support network</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                    <span>Smaller group setting</span>
+                  </li>
+                </ul>
+                <div className="bg-primary/10 rounded-lg p-3">
+                  <p className="text-xs font-semibold text-foreground mb-1">
+                    100% Money-Back Guarantee
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    If you attend all sessions and don't feel the time was well spent, receive a full refund.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <img
+                  src="/one_on_one_logo.png"
+                  alt="One on One Grief Support"
                   className="h-20 mb-4"
                 />
                 <CardTitle>Individual Program</CardTitle>
@@ -468,9 +514,9 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="text-center py-4 border-y border-border">
-                  <div className="text-3xl font-bold text-foreground">$500</div>
-                  <div className="text-sm text-muted-foreground">7 sessions • Once per week</div>
+                <div className="text-center py-3 border-y border-border">
+                  <div className="text-2xl font-bold text-foreground">$500</div>
+                  <div className="text-xs text-muted-foreground">7 sessions • Once per week</div>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start">
@@ -498,44 +544,6 @@ export default function HomePage() {
                     If you attend all sessions and don't feel the time was well spent, receive a full refund.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <img 
-                  src="/grm_support_group_logo_medium.png" 
-                  alt="Grief Recovery Method Support Group" 
-                  className="h-20 mb-4"
-                />
-                <CardTitle>Group Sessions</CardTitle>
-                <CardDescription>
-                  Join others on a shared healing journey through the Grief Recovery Method in a supportive group setting.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="text-center py-3 border-y border-border">
-                  <div className="text-2xl font-bold text-foreground">$395</div>
-                  <div className="text-xs text-muted-foreground">8 weeks • Once per week</div>
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Shared healing experience</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Evidence-based curriculum</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Peer support network</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Smaller group setting</span>
-                  </li>
-                </ul>
               </CardContent>
             </Card>
 

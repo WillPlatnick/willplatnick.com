@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Heart, BookOpen, Mail, MapPin, Download, BarChart, ExternalLink, CheckCircle } from "lucide-react"
+import { Heart, BookOpen, Mail, Download, BarChart, ExternalLink, CheckCircle } from "lucide-react"
 
 export default function HomePage() {
   const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -70,7 +70,7 @@ export default function HomePage() {
               <a href="#resources" className="text-muted-foreground hover:text-foreground transition-colors">
                 Resources
               </a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#group-interest-form" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </a>
             </nav>
@@ -90,10 +90,15 @@ export default function HomePage() {
             Guiding You Through
             <span className="text-primary block">Grief to Healing</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
             As a Certified Grief Recovery Specialist with the Grief Recovery Method, Will provides compassionate support to
             help you navigate loss and find your path toward healing and hope.
           </p>
+          <Button size="lg" className="text-lg px-8 py-6" asChild>
+            <a href="#group-session">
+              Join Our Next Group Session - Jan 12th at 7:30 PM ET
+            </a>
+          </Button>
         </div>
       </section>
 
@@ -193,6 +198,100 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Upcoming Group Session Section */}
+      <section id="group-session" className="py-16 px-4 bg-gradient-to-r from-primary/20 to-primary/10 border-y-2 border-primary/30">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-8">
+            <Badge className="mb-4 bg-primary text-primary-foreground px-4 py-2 text-base">
+              Upcoming Group Session
+            </Badge>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Join Our Next Grief Recovery Group
+            </h2>
+            <p className="text-xl text-muted-foreground mb-2">
+              Starting January 12th, 2026 • 7:30 PM Eastern
+            </p>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Connect with others on a shared healing journey. Limited spots available.
+            </p>
+          </div>
+
+          <Card className="border-2 border-primary/30 shadow-2xl bg-card">
+            <CardContent className="pt-8">
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">What You'll Experience</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span className="text-muted-foreground">8 weeks of evidence-based grief recovery sessions</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span className="text-muted-foreground">Weekly meetings in a safe, supportive environment</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span className="text-muted-foreground">Connect with others who understand your journey</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span className="text-muted-foreground">Learn proven tools for processing grief and loss</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                      <span className="text-muted-foreground">100% Money-Back Guarantee if you attend all sessions</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">Session Details</h3>
+                  <div className="bg-muted/50 rounded-lg p-6 space-y-4">
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">Start Date</p>
+                      <p className="text-lg font-semibold text-foreground">January 12th, 2026</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">Time</p>
+                      <p className="text-lg font-semibold text-foreground">7:30 PM Eastern</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">Duration</p>
+                      <p className="text-lg font-semibold text-foreground">8 Weeks • Once per week</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">Investment</p>
+                      <p className="text-lg font-semibold text-foreground">$395</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">Format</p>
+                      <p className="text-lg font-semibold text-foreground">Small Group via Zoom</p>
+                    </div>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs text-muted-foreground italic">
+                        Need-based scholarships available through New Breath Spirituality Center
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Button size="lg" className="text-lg px-12 py-6" asChild>
+                  <a href="#group-interest-form">
+                    Express Your Interest
+                  </a>
+                </Button>
+                <p className="text-sm text-muted-foreground mt-4">
+                  Limited spots available
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -638,7 +737,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex justify-center">
                   <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">
+                    <a href="#group-interest-form">
                       Inquire About Scholarship Options
                     </a>
                   </Button>
@@ -724,120 +823,120 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-8 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
+      {/* Group Interest Form Section */}
+      <section id="group-interest-form" className="py-16 px-4 bg-gradient-to-r from-primary/10 to-primary/5">
+        <div className="container mx-auto max-w-3xl">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ready to Begin Your Healing Journey?
+              Get in Touch
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Take the first step toward healing. Will is here to support you every step of the way.
+            <p className="text-lg text-muted-foreground mb-4">
+              Interested in the January 12th group session? Have questions about services or need help with something else?
+            </p>
+            <p className="text-base text-muted-foreground">
+              Fill out the form below and Will will personally reach out within 24-48 hours.
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <Card className="border-border">
-              <CardHeader>
-                <CardTitle>Get in Touch</CardTitle>
-                <CardDescription>Have questions about the Grief Recovery Method or how Will can help? He's here to answer them.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1">
-                      Phone (optional)
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="(555) 123-4567"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={4}
-                      className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                      placeholder="Tell me a bit about what you're looking for..."
-                    />
-                  </div>
-                  
-                  {formMessage && (
-                    <div className={`p-3 rounded-md text-sm ${
-                      formStatus === 'success' 
-                        ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400' 
-                        : 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400'
-                    }`}>
-                      {formMessage}
-                    </div>
-                  )}
-                  
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full"
-                    disabled={formStatus === 'loading'}
-                  >
-                    {formStatus === 'loading' ? (
-                      <>Sending...</>
-                    ) : (
-                      <>
-                        <Mail className="mr-2 h-5 w-5" />
-                        Send Message
-                      </>
-                    )}
-                  </Button>
-                </form>
-                
-                <div className="mt-6 pt-6 border-t border-border">
-                  <div className="space-y-2 text-xs text-muted-foreground">
-                    <div className="flex items-center space-x-2">
-                      <MapPin className="h-4 w-4 text-primary" />
-                      <span>Serving clients nationwide via Zoom</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Heart className="h-4 w-4 text-primary" />
-                      <span>All communications are confidential</span>
-                    </div>
-                  </div>
+          <Card className="border-2 border-primary/20 shadow-xl">
+            <CardContent className="pt-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <input type="hidden" name="subject" value="Contact Form Submission" />
+
+                <div>
+                  <label htmlFor="group-name" className="block text-sm font-medium text-foreground mb-2">
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="group-name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Your full name"
+                  />
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+
+                <div>
+                  <label htmlFor="group-email" className="block text-sm font-medium text-foreground mb-2">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="group-email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="group-phone" className="block text-sm font-medium text-foreground mb-2">
+                    Phone Number *
+                  </label>
+                  <input
+                    type="tel"
+                    id="group-phone"
+                    name="phone"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="(555) 123-4567"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="group-message" className="block text-sm font-medium text-foreground mb-2">
+                    How can Will help you? *
+                  </label>
+                  <textarea
+                    id="group-message"
+                    name="message"
+                    required
+                    rows={5}
+                    className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                    placeholder="Let Will know if you're interested in the January 12th group session, have questions about services, need scholarship information, or anything else..."
+                  />
+                </div>
+
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <p className="text-sm text-muted-foreground">
+                    <strong className="text-foreground">What happens next:</strong> Will will personally reach out within 24-48 hours to answer your questions and discuss next steps. All communications are confidential.
+                  </p>
+                </div>
+
+                {formMessage && (
+                  <div className={`p-4 rounded-md text-sm ${
+                    formStatus === 'success'
+                      ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400'
+                      : 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400'
+                  }`}>
+                    {formMessage}
+                  </div>
+                )}
+
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full text-lg py-6"
+                  disabled={formStatus === 'loading'}
+                >
+                  {formStatus === 'loading' ? (
+                    <>Sending...</>
+                  ) : (
+                    <>
+                      <Mail className="mr-2 h-5 w-5" />
+                      Send Message
+                    </>
+                  )}
+                </Button>
+
+                <p className="text-center text-xs text-muted-foreground">
+                  Your information is confidential and will only be used to respond to your inquiry.
+                </p>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -865,7 +964,7 @@ export default function HomePage() {
               <a href="#resources" className="hover:text-foreground transition-colors">
                 Resources
               </a>
-              <a href="#contact" className="hover:text-foreground transition-colors">
+              <a href="#group-interest-form" className="hover:text-foreground transition-colors">
                 Contact
               </a>
             </div>

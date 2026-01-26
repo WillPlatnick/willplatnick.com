@@ -96,7 +96,7 @@ export default function HomePage() {
           </p>
           <Button size="lg" className="text-lg px-8 py-6" asChild>
             <a href="#group-session">
-              Join Our Next Group Session - Jan 12th at 7:30 PM ET
+              Learn About Upcoming Group Sessions
             </a>
           </Button>
         </div>
@@ -209,10 +209,10 @@ export default function HomePage() {
               Upcoming Group Session
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Join Our Next Grief Recovery Group
+              Join Our Grief Recovery Group
             </h2>
             <p className="text-xl text-muted-foreground mb-2">
-              Starting January 12th, 2026 • 7:30 PM Eastern
+              7:30 PM Eastern • 8 Weeks
             </p>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Connect with others on a shared healing journey. Limited spots available.
@@ -251,10 +251,6 @@ export default function HomePage() {
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold text-foreground mb-4">Session Details</h3>
                   <div className="bg-muted/50 rounded-lg p-6 space-y-4">
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-1">Start Date</p>
-                      <p className="text-lg font-semibold text-foreground">January 12th, 2026</p>
-                    </div>
                     <div>
                       <p className="text-sm text-muted-foreground mb-1">Time</p>
                       <p className="text-lg font-semibold text-foreground">7:30 PM Eastern</p>
@@ -831,7 +827,7 @@ export default function HomePage() {
               Get in Touch
             </h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Interested in the January 12th group session? Have questions about services or need help with something else?
+              Interested in group sessions? Have questions about services or need help with something else?
             </p>
             <p className="text-base text-muted-foreground">
               Fill out the form below and Will will personally reach out within 24-48 hours.
@@ -895,7 +891,7 @@ export default function HomePage() {
                     required
                     rows={5}
                     className="w-full px-4 py-3 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                    placeholder="Let Will know if you're interested in the January 12th group session, have questions about services, need scholarship information, or anything else..."
+                    placeholder="Let Will know if you're interested in group sessions, have questions about services, need scholarship information, or anything else..."
                   />
                 </div>
 
